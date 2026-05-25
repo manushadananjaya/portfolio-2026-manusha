@@ -56,11 +56,12 @@ onUnmounted(() => {
     v-if="props.preview"
   >
     <div class="preview-card-top" ref="wrapperRef">
-      <div class="preview-card-image-wrapper">
+      <div class="preview-card-image-wrapper" v-if="props.preview.thumbnail">
         <div class="preview-card-image-container">
           <img :src="props.preview.thumbnail" :alt="props.preview.title" class="preview-card-image" ref="imageRef" />
         </div>
       </div>
+      <div v-else class="preview-card-top-empty preview-card-top-no-thumbnail"></div>
       <div class="preview-card-overlay">
         <div class="preview-card-edge">
           <ButtonRound class="preview-card-button" variant="accent" renderAs="div">
@@ -211,6 +212,13 @@ onUnmounted(() => {
       display: flex;
       align-items: center;
       justify-content: center;
+
+    &-no-thumbnail {
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--color-grayscale-400) 0%, var(--color-grayscale-500) 100%);
+      width: 100%;
+      height: 100%;
+    }
 
       &-icon {
         width: var(--icon-size-lg);

@@ -3,8 +3,8 @@ import type { ProjectContent } from "../../types";
 export default {
   title: "AFNA.ai",
   theme: "dark",
-  tags: ["next", "node", "postgresql"],
+  tags: ["next", "react", "node", "postgresql"],
   live: "https://afna.ai",
   description:
-    "AFNA.ai is a freight negotiation and logistics management platform built for NexusCargos.<br/><br/>I designed and built the end-to-end system — multi-carrier rate comparison, real-time shipment tracking, and automated negotiation workflows — shipped to production as a fully operational platform serving live freight traffic.",
+    "AFNA is an AI-powered freight negotiation and logistics management platform designed to simplify shipment booking, carrier communication, freight rate comparison, and real-time logistics operations through intelligent automation.<br/><br/>I handled the complete UI/UX design, frontend and backend development, system architecture, cloud integration, and performance optimisation — building a scalable platform that connects logistics teams with verified carriers and live pricing systems.<br/><br/>Key features include:<br/>• AI-powered freight negotiation system<br/>• Real-time shipment tracking<br/>• Live carrier rate comparison and verified carrier management<br/>• Instant shipment booking and automated logistics workflows<br/>• Advanced analytics and reporting<br/>• Secure, cloud-ready, high-performance architecture",
 } as const satisfies ProjectContent;

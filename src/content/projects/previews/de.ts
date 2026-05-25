@@ -1,47 +1,44 @@
-import thumbnailCubeWar from "../../../assets/thumbnails/cubewar.webp";
-import thumbnailQuibbo from "../../../assets/thumbnails/quibbo.webp";
-//import thumbnailParticles from "../../../assets/thumbnails/particles.webp";
-import thumbnailPokedex from "../../../assets/thumbnails/pokedex.webp";
-import thumbnailSharkie from "../../../assets/thumbnails/sharkie.webp";
-import thumbnailStreakon from "../../../assets/thumbnails/streakon.webp";
-
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "StreakOn",
-    slug: "streakon",
-    thumbnail: thumbnailStreakon,
-    description: "App für tägliche Gewohnheiten",
+    title: "AFNA.ai",
+    slug: "afna",
+    description: "Frachtvermittlungs-Plattform",
   },
   {
-    title: "CubeWar",
-    slug: "cubewar",
-    thumbnail: thumbnailCubeWar,
-    description: "Multiplayer-Strategiespiel",
+    title: "NexusCargoSync",
+    slug: "nexuscargo",
+    description: "KI-Logistikmanagementsystem",
   },
   {
-    title: "Quibbo",
-    slug: "quibbo",
-    thumbnail: thumbnailQuibbo,
-    description: "Multiplayer-Gaming-Plattform",
+    title: "Metromart.ae",
+    slug: "metromart",
+    description: "E-Commerce-Plattform",
   },
   {
-    title: "Sharkie",
-    slug: "sharkie",
-    thumbnail: thumbnailSharkie,
-    description: "2D-Abenteuerspiel",
+    title: "Microservices E-Commerce",
+    slug: "microservices",
+    description: "Ereignisgesteuerte Microservices-Plattform",
   },
-  /**  {
-    title: "WebGL Partikel",
-    slug: "particles",
-    thumbnail: thumbnailParticles,
-    description: "Dynamische 3D Partikel",
-  }, */
   {
-    title: "Pokédex",
-    slug: "pokedex",
-    thumbnail: thumbnailPokedex,
-    description: "Open-Source Lernprojekt",
+    title: "Nexus Cargos",
+    slug: "nexuscargos",
+    description: "Globale Logistik- & Speditionsplattform",
+  },
+  {
+    title: "Aquaflow",
+    slug: "aquaflow",
+    description: "Website für Wasserlieferanten",
+  },
+  {
+    title: "BuyMyCar.lk",
+    slug: "buymycar",
+    description: "Fahrzeugimport- & Kaufplattform",
+  },
+  {
+    title: "GuitarTunePro",
+    slug: "guitartune",
+    description: "Kostenloses Online-Instrument-Stimmgerät",
   },
 ] as const satisfies ProjectPreview[];

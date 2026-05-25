@@ -1,47 +1,44 @@
-import thumbnailCubeWar from "../../../assets/thumbnails/cubewar.webp";
-import thumbnailQuibbo from "../../../assets/thumbnails/quibbo.webp";
-//import thumbnailParticles from "../../../assets/thumbnails/particles.webp";
-import thumbnailPokedex from "../../../assets/thumbnails/pokedex.webp";
-import thumbnailSharkie from "../../../assets/thumbnails/sharkie.webp";
-import thumbnailStreakon from "../../../assets/thumbnails/streakon.webp";
-
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "StreakOn",
-    slug: "streakon",
-    thumbnail: thumbnailStreakon,
-    description: "Social habit tracking app",
+    title: "AFNA.ai",
+    slug: "afna",
+    description: "Freight negotiation platform",
   },
   {
-    title: "CubeWar",
-    slug: "cubewar",
-    thumbnail: thumbnailCubeWar,
-    description: "Multiplayer strategy game",
+    title: "NexusCargoSync",
+    slug: "nexuscargo",
+    description: "AI logistics management system",
   },
   {
-    title: "Quibbo",
-    slug: "quibbo",
-    thumbnail: thumbnailQuibbo,
-    description: "Multiplayer gaming platform",
+    title: "Metromart.ae",
+    slug: "metromart",
+    description: "E-commerce platform",
   },
   {
-    title: "Sharkie",
-    slug: "sharkie",
-    thumbnail: thumbnailSharkie,
-    description: "2D adventure game",
+    title: "Microservices E-Commerce",
+    slug: "microservices",
+    description: "Event-driven microservices platform",
   },
-  /**  {
-    title: "WebGL Particles",
-    slug: "particles",
-    thumbnail: thumbnailParticles,
-    description: "Dynamic 3D particles",
-  }, */
   {
-    title: "Pokédex",
-    slug: "pokedex",
-    thumbnail: thumbnailPokedex,
-    description: "Open-source learning project",
+    title: "Nexus Cargos",
+    slug: "nexuscargos",
+    description: "Global logistics & freight forwarding platform",
+  },
+  {
+    title: "Aquaflow",
+    slug: "aquaflow",
+    description: "Bottled water supplier agency website",
+  },
+  {
+    title: "BuyMyCar.lk",
+    slug: "buymycar",
+    description: "Vehicle import & buying platform",
+  },
+  {
+    title: "GuitarTunePro",
+    slug: "guitartune",
+    description: "Free online instrument tuner",
   },
 ] as const satisfies ProjectPreview[];
