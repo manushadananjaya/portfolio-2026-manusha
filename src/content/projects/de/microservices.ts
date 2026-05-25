@@ -6,4 +6,15 @@ export default {
   tags: ["next", "kafka"],
   description:
     "Eine Microservices-basierte E-Commerce-Plattform, entwickelt als EAD-Modulprojekt mit verteilter Architektur aus unabhängigen Services.<br/><br/>Ich leitete das Team und verantwortete das gesamte Design und die Entwicklung — ereignisgesteuerte Kommunikation über Kafka, Keycloak-basierte Authentifizierung, containerisierte Deployments mit Docker sowie ein Next.js-Storefront, das von Spring Boot-Services, MySQL und MongoDB unterstützt wird.",
+  components: [
+    {
+      type: "media",
+      props: {
+        type: "image",
+        src: "/projectImages/microservices project.avif",
+        alt: "Screenshot der Microservices E-Commerce Plattform",
+        caption: "Microservices E-Commerce — Verteilte Plattform mit Kafka & Docker",
+      },
+    },
+  ],
 } as const satisfies ProjectContent;

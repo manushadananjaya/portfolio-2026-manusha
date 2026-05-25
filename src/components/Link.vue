@@ -48,7 +48,7 @@ const handleClick = (event: MouseEvent) => {
     v-if="props.external"
     :is="props.renderAs || 'a'"
     :href="props.href || props.to"
-    target="_blank"
+    :target="(props.href || props.to || '').startsWith('mailto:') ? '_self' : '_blank'"
     rel="noopener noreferrer"
     v-bind="attrs"
   >

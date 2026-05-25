@@ -7,14 +7,15 @@ import { onMounted, onUnmounted, ref } from "vue";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ButtonRound from "../../../components/ButtonRound.vue";
 import { t } from "../../../i18n/utils/translate";
-import { social } from "../../../content/social";
 import Plus from "../../../components/icons/Plus.vue";
+import ContactModal from "../../../components/ContactModal.vue";
 
 import type { ProjectPreview } from "../../../content/types";
 
 const tlRef = ref<gsap.core.Timeline | null>(null);
 const wrapperRef = ref<HTMLDivElement | null>(null);
 const imageRef = ref<HTMLImageElement | null>(null);
+const showContactModal = ref(false);
 
 const props = defineProps<{
   preview?: ProjectPreview;
@@ -80,13 +81,15 @@ onUnmounted(() => {
     </div>
   </Link>
 
-  <Link
+  <div
     v-else
-    class="preview-card children-unclickable"
-    data-cursor="arrow-external"
+    class="preview-card preview-card-new children-unclickable"
+    role="button"
+    tabindex="0"
+    data-cursor="arrow"
     data-hoversound="hover"
-    external
-    :href="social[0].url"
+    @click="showContactModal = true"
+    @keydown.enter.space.prevent="showContactModal = true"
   >
     <div class="preview-card-top preview-card-top-empty">
       <Plus class="preview-card-top-empty-icon" />
@@ -96,7 +99,9 @@ onUnmounted(() => {
         <h3 class="preview-card-title">{{ t("start-a-new-project") }}</h3>
       </div>
     </div>
-  </Link>
+  </div>
+
+  <ContactModal v-if="showContactModal" @close="showContactModal = false" />
 </template>
 
 <style scoped lang="scss">
@@ -244,6 +249,10 @@ onUnmounted(() => {
     font-size: var(--font-size-md);
     color: var(--color-text-300);
     font-weight: 500;
+  }
+
+  &-new {
+    cursor: pointer;
   }
 }
 </style>
