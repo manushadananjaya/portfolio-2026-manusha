@@ -11,7 +11,6 @@ export default {
   title: "Pokédex",
   theme: "light",
   tags: ["javascript", "html", "css"],
-  live: "https://pokedex.david-hckh.com/",
   source: "https://github.com/davidhckh/pokedex",
   videoBorder: true,
   description:
