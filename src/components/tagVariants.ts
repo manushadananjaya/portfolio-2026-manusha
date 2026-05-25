@@ -17,7 +17,9 @@ export type TagVariant =
   | "dotnet"
   | "azure"
   | "stripe"
-  | "kafka";
+  | "kafka"
+  | "flutter"
+  | "firebase";
 
 export const tagLabels = {
   three: "Three.js",
@@ -39,4 +41,6 @@ export const tagLabels = {
   azure: "Azure",
   stripe: "Stripe",
   kafka: "Kafka",
+  flutter: "Flutter",
+  firebase: "Firebase",
 } as const satisfies Record<TagVariant, string>;
